@@ -1,15 +1,64 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+html{
+    font-family: sans-serif;
+}
+
+li{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+li:hover{
+    background-color: lightblue;
+}
+
+ul{
+    color: #191970;
+}
+
+.pomodoro-estimate{
+    color: red;
+    font-weight: bold;
+    font-size: 14px;  
+    background-color: #C0C0C0;
+    padding: 3px 10px 5px 10px;
+    border-radius: 50px;
+    margin-top: 1px;    
+}
+
+#add-new-to-do-button{
+    font-size: 20px;
+    color: #FFF;
+    background-color: darkred;
+    outline: none;
+    border-style: none;
+    padding: 3px;
+    border-radius: 25px;
+    box-shadow: 2px 1px 2px black;
+    display: block;
+    margin-top: 15px;
+}
+    
+#add-new-to-do-button: active{
+    box-shadow: 1px 1px 1px black;
+} 
+
+.box-one{
+background-color: white;
+color: black;
+}
+
+.box-two{
+background-color: white;
+color: black;
+}
+
+.div{
+    text-align: center;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+span{
+    background-color: yellow;
+    color: red; 
+}
