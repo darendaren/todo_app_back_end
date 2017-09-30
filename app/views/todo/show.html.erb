@@ -1,5 +1,8 @@
 <input type="checkbox">
 <h2><%= @todo_description %> <%= @todo_pomodoro_estimate %> Pomodoros</h2>
+<h3>Todo #<%= params[:id] %></h3>
+
+<h1>The task is : <%= @description %> </h1>
 <a href="#">Edit</a>
 <a href="#">Delete</a>
-<a href="#">Go back...</a>
+<a href="/todo/index">Go back...</a>
