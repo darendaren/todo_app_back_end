@@ -9,23 +9,13 @@
     <h1>WORKSHOP TO DO!</h1>
     
 <ul>
-    <a href="/todo/show/1">
-        <li> <input type="checkbox">Make the curriculum 
-            <span class="pomodoro-estimate"> 4 pomodoros</span>
+    <% @todos.each do |todo| %>
+        <li> 
+            <input type = 'checkbox' name = "" /> 
+            <a href= "/todo/show/ <%= todo.id %>" <%= todo.description %> </a>
+            <span class> <%= todo.pomodoro_estimate %> </span>
         </li>
-    </a><a href="/todo/show/2">
-        <li> <input type="checkbox">Buy Food
-            <span class="pomodoro-estimate"> 4 pomodoros</span>
-        </li>
-    </a><a href="/todo/show/3">
-        <li> <input type="checkbox">Call Person
-            <span class="pomodoro-estimate"> 4 pomodoros</span>
-        </li>
-    </a><a href="/todo/show/4">
-        <li> <input type="checkbox">Read book
-            <span class="pomodoro-estimate"> 4 pomodoros</span>
-        </li>
-    </a>
+        <% end %>
 </ul>
 
 <div>
