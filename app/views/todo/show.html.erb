@@ -3,6 +3,6 @@
 <h3>Todo #<%= params[:id] %></h3>
 
 <h1>The task is : <%= @description %> </h1>
-<a href="#">Edit</a>
+<a href="/todo/edit/<%= @todo.id %>" class="button edit-todo-button">Edit</a>
 <a href="#">Delete</a>
 <a href="/todo/index">Go back...</a>
